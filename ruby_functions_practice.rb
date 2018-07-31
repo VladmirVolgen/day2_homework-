@@ -100,3 +100,7 @@ def number_to_short_month_name(month_number)
     return "This number is not valid"
   end
 end
+
+def volume_of_a_cube(side)
+  return side ** 3
+end
