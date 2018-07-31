@@ -34,10 +34,6 @@ def add_string_as_number(string1, string2)
   return string1.to_i + string2.to_i
 end
 
-# def test_month_by_number__month_1()
-#   month = number_to_full_month_name( 1 )
-#   assert_equal( "January", month )
-# end
 
 def number_to_full_month_name(month_number)
   case month_number
@@ -111,10 +107,9 @@ def volume_of_a_sphere(radius)
   return number.round(2)
 end
 
+
 def convert_farenheit_to_celsius(temp_f)
-
   return (temp_f - 32.00) * (5.00 /9.00)
-
 end
 
 # Extra work
@@ -124,15 +119,11 @@ def month_array_long(number)
     "May", "June", "July" "August", "September", "October",
     "November", "December"]
 
-    return month_array_long[number - 1]
+  return month_array_long[number - 1]
 
 end
 
 def month_array_short(number)
   result = month_array_long(number).split("")
-  result[0..2].join
+  return result[0..2].join
 end
-
-
-# month_array_short = ["Jan", "Feb", "Mar", "May", "Jun", "Jul",
-#   "Aug", "Sep", "Oct", "Nov", "Dec"]
