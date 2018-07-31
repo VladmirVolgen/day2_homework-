@@ -100,5 +100,20 @@ class FunctionsTest < MiniTest::Test
     assert_equal(20, temperature)
   end
 
+  # Extra work
+
+  def test_month_array_long()
+
+    month = month_array_long(2)
+    assert_equal("February", month)
+
+  end
+
+  def test_month_array_short()
+
+    month = month_array_short(7)
+    assert_equal("Jul", month)
+  end
+
 
 end
