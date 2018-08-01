@@ -115,7 +115,7 @@ end
 # Extra work
 
 def month_array_long(number)
-  month_array_long = ["January", "February", "March", "April",
+  months = ["January", "February", "March", "April",
     "May", "June", "July" "August", "September", "October",
     "November", "December"]
 
@@ -125,5 +125,5 @@ end
 
 def month_array_short(number)
   result = month_array_long(number).split("")
-  return result[0..2].join
+  return result[0..2].join("")
 end
